@@ -58,7 +58,7 @@ export default function Home() {
         {/* Encabezado: Selectores de Modo y Tema */}
         <div className="flex flex-col gap-3 mb-6">
           <div className="flex justify-between items-center">
-            <h1 className="text-lg font-bold">Calculadora Pro</h1>
+            <h1 className="text-lg font-bold">Calculadora Pro2222</h1>
             
             {/* Botón de Modo Estándar / Científica */}
             <button 
