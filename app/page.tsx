@@ -1,10 +1,11 @@
-'client';
+'use client';
 
 import { useState } from 'react';
 
 export default function Home() {
   const [display, setDisplay] = useState('0');
-  const [modo, setModo] = useState('estandar');
+};
+  
 
   const handleButtonClick = (value: string) => {
     if (value === 'C') {
