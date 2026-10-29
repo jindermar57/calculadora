@@ -31,59 +31,59 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-emerald-950 text-white p-4">
-      <div className="w-full max-w-md bg-emerald-900/40 border border-emerald-600/50 rounded-2xl p-6 shadow-2xl backdrop-blur-md">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white p-4">
+      <div className="w-full max-w-md bg-neutral-900 border border-neutral-800 rounded-2xl p-6 shadow-2xl backdrop-blur-md">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-lg font-bold text-emerald-400">Calculadora Verde</h1>
+          <h1 className="text-lg font-bold text-neutral-200">Calculadora Negra</h1>
           <button
             onClick={() => setModo(modo === 'estandar' ? 'cientifica' : 'estandar')}
-            className="text-xs bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg transition-all"
+            className="text-xs bg-neutral-800 hover:bg-neutral-700 text-neutral-200 border border-neutral-700 px-3 py-1.5 rounded-lg transition-all"
           >
             Modo: {modo.toUpperCase()}
           </button>
         </div>
 
-        <div className="bg-black/60 border border-emerald-500/30 rounded-xl p-4 text-right text-2xl font-mono mb-6 text-emerald-200 overflow-x-auto">
+        <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-4 text-right text-2xl font-mono mb-6 text-white overflow-x-auto">
           {display}
         </div>
 
         {modo === 'cientifica' && (
-          <div className="grid grid-cols-5 gap-2 mb-3 bg-emerald-950/40 p-2 rounded-xl border border-emerald-800/40">
-            <button onClick={() => handleButtonClick('sin(')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">sin</button>
-            <button onClick={() => handleButtonClick('cos(')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">cos</button>
-            <button onClick={() => handleButtonClick('tan(')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">tan</button>
-            <button onClick={() => handleButtonClick('√(')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">√</button>
-            <button onClick={() => handleButtonClick('^')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">^</button>
-            <button onClick={() => handleButtonClick('π')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">π</button>
-            <button onClick={() => handleButtonClick('e')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">e</button>
-            <button onClick={() => handleButtonClick('(')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">(</button>
-            <button onClick={() => handleButtonClick(')')} className="bg-emerald-900/60 hover:bg-emerald-800 p-2 rounded-lg text-xs font-semibold">)</button>
+          <div className="grid grid-cols-5 gap-2 mb-3 bg-neutral-950/60 p-2 rounded-xl border border-neutral-800">
+            <button onClick={() => handleButtonClick('sin(')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">sin</button>
+            <button onClick={() => handleButtonClick('cos(')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">cos</button>
+            <button onClick={() => handleButtonClick('tan(')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">tan</button>
+            <button onClick={() => handleButtonClick('√(')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">√</button>
+            <button onClick={() => handleButtonClick('^')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">^</button>
+            <button onClick={() => handleButtonClick('π')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">π</button>
+            <button onClick={() => handleButtonClick('e')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">e</button>
+            <button onClick={() => handleButtonClick('(')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">(</button>
+            <button onClick={() => handleButtonClick(')')} className="bg-neutral-800 hover:bg-neutral-700 p-2 rounded-lg text-xs font-semibold text-neutral-300">)</button>
           </div>
         )}
 
         <div className="grid grid-cols-4 gap-3">
-          <button onClick={() => handleButtonClick('C')} className="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 font-bold p-4 rounded-xl border border-emerald-800/50">C</button>
-          <button onClick={() => handleButtonClick('DEL')} className="bg-emerald-900/40 hover:bg-emerald-900/60 font-bold p-4 rounded-xl border border-emerald-800/50">DEL</button>
-          <button onClick={() => handleButtonClick('÷')} className="bg-emerald-600/30 hover:bg-emerald-600/50 font-bold p-4 rounded-xl border border-emerald-600/50">÷</button>
-          <button onClick={() => handleButtonClick('×')} className="bg-emerald-600/30 hover:bg-emerald-600/50 font-bold p-4 rounded-xl border border-emerald-600/50">×</button>
+          <button onClick={() => handleButtonClick('C')} className="bg-neutral-800 hover:bg-neutral-700 text-red-400 font-bold p-4 rounded-xl border border-neutral-700">C</button>
+          <button onClick={() => handleButtonClick('DEL')} className="bg-neutral-800 hover:bg-neutral-700 font-bold p-4 rounded-xl border border-neutral-700">DEL</button>
+          <button onClick={() => handleButtonClick('÷')} className="bg-neutral-800 hover:bg-neutral-700 text-neutral-300 font-bold p-4 rounded-xl border border-neutral-700">÷</button>
+          <button onClick={() => handleButtonClick('×')} className="bg-neutral-800 hover:bg-neutral-700 text-neutral-300 font-bold p-4 rounded-xl border border-neutral-700">×</button>
 
-          <button onClick={() => handleButtonClick('7')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">7</button>
-          <button onClick={() => handleButtonClick('8')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">8</button>
-          <button onClick={() => handleButtonClick('9')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">9</button>
-          <button onClick={() => handleButtonClick('-')} className="bg-emerald-600/30 hover:bg-emerald-600/50 font-bold p-4 rounded-xl border border-emerald-600/50">-</button>
+          <button onClick={() => handleButtonClick('7')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">7</button>
+          <button onClick={() => handleButtonClick('8')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">8</button>
+          <button onClick={() => handleButtonClick('9')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">9</button>
+          <button onClick={() => handleButtonClick('-')} className="bg-neutral-800 hover:bg-neutral-700 text-neutral-300 font-bold p-4 rounded-xl border border-neutral-700">-</button>
 
-          <button onClick={() => handleButtonClick('4')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">4</button>
-          <button onClick={() => handleButtonClick('5')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">5</button>
-          <button onClick={() => handleButtonClick('6')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">6</button>
-          <button onClick={() => handleButtonClick('+')} className="bg-emerald-600/30 hover:bg-emerald-600/50 font-bold p-4 rounded-xl border border-emerald-600/50">+</button>
+          <button onClick={() => handleButtonClick('4')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">4</button>
+          <button onClick={() => handleButtonClick('5')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">5</button>
+          <button onClick={() => handleButtonClick('6')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">6</button>
+          <button onClick={() => handleButtonClick('+')} className="bg-neutral-800 hover:bg-neutral-700 text-neutral-300 font-bold p-4 rounded-xl border border-neutral-700">+</button>
 
-          <button onClick={() => handleButtonClick('1')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">1</button>
-          <button onClick={() => handleButtonClick('2')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">2</button>
-          <button onClick={() => handleButtonClick('3')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">3</button>
-          <button onClick={() => handleButtonClick('=')} className="bg-emerald-600 hover:bg-emerald-500 font-bold p-4 rounded-xl row-span-2 flex items-center justify-center text-xl shadow-lg">=</button>
+          <button onClick={() => handleButtonClick('1')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">1</button>
+          <button onClick={() => handleButtonClick('2')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">2</button>
+          <button onClick={() => handleButtonClick('3')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">3</button>
+          <button onClick={() => handleButtonClick('=')} className="bg-white hover:bg-neutral-200 text-neutral-950 font-bold p-4 rounded-xl row-span-2 flex items-center justify-center text-xl shadow-lg">=</button>
 
-          <button onClick={() => handleButtonClick('0')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30 col-span-2">0</button>
-          <button onClick={() => handleButtonClick('.')} className="bg-emerald-900/20 hover:bg-emerald-900/40 font-bold p-4 rounded-xl border border-emerald-800/30">.</button>
+          <button onClick={() => handleButtonClick('0')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800 col-span-2">0</button>
+          <button onClick={() => handleButtonClick('.')} className="bg-neutral-900 hover:bg-neutral-800 font-bold p-4 rounded-xl border border-neutral-800">.</button>
         </div>
       </div>
     </main>
